@@ -1,0 +1,499 @@
+body {
+    font-family: 'Titillium Web', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-kerning: normal;
+    font-kerning: normal;
+    letter-spacing: 3px;
+    line-height: 1.5;
+    animation: fadeInAnimation ease 1s; 
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.5rem;
+    background-color: #707070;
+}
+
+header button {
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+    padding: 0;
+}
+
+header .hamburger-icon {
+    width: 15px;
+    height: 15px;
+    position: relative;
+    margin: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    cursor: pointer;
+    color: currentColor;
+    z-index: 2;
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    display: block;
+}
+
+header .hamburger-icon span {
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background: currentColor;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+    -webkit-transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+    color: #fff;
+}
+
+header .hamburger-icon span:nth-child(1) {
+    top: 0;
+    height: 2px;
+}
+
+header .hamburger-icon span:nth-child(2) {
+    top: 6px;
+    height: 2px;
+}
+
+header .hamburger-icon span:nth-child(3) {
+    top: 12px;
+    height: 2px;
+}
+
+header .click span:nth-child(1) {
+    transform: rotate(45deg) translate(1px, -2px);
+    height: 2px;
+}
+
+header .click span:nth-child(2) {
+    opacity: 0;
+}
+
+header .click span:nth-child(3) {
+    transform: rotate(-45deg) translate(3px, 0px);
+    height: 2px;
+}
+
+header .logo a {
+    font-weight: bold;
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header .contact::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid #7CE2B2;
+}
+
+.jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 95vh;
+    background-color: #707070;
+}
+
+.jumbotron p {
+    font-size: 2rem;
+    color: #fff;
+    width: 70%;
+}
+
+.jumbotron p span {
+    color:#7CE2B2;
+    font-weight: bold;
+}
+
+.hp-about {
+    padding: 1rem 1rem 3rem 1rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(xps-8pb7Hq539Zw-unsplash.jpg);
+    background-size: cover;
+}
+
+.hp-about p {
+    font-size:1rem;
+    font-weight: 600;
+    padding: 0 0 1rem 0;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.cta-button {
+    background-color:#7CE2B2;
+    width: 200px;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cta-button {
+    text-decoration: none;
+    color: #292929;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.hp-launches {
+    padding: 1rem 0;
+}
+
+.hp-launches h1 {
+    color: #707070;
+    text-align: center;
+    line-height: 1;
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+
+.hp-launches h1 span {
+    color:#7CE2B2;
+}
+
+.launches {
+    padding: 0 1rem;
+}
+
+.launches img {
+    width:100%;
+}
+
+.launch-image {
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.launch-image p {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    margin: 0 -50% 0 0;
+    transform: translate(-50%,-50%);
+}
+
+.launch-image p span {
+    font-size: 0.75rem;
+}
+
+.hp-services h1 {
+    background-color: #707070;
+    padding:1rem 2rem;
+    color:#7CE2B2;
+    text-transform: uppercase;
+}
+
+.hp-services ul {
+    padding: 1rem 0 0 2rem;
+    list-style: none;
+}
+
+.hp-services ul li {
+    padding-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.hp-contact {
+    background-color: #7CE2B2;
+    padding: 1rem 1rem 3rem 1rem;
+}
+
+.hp-contact h2 {
+    color: #292929;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.hp-contact .cta-button {
+    text-decoration: none;
+    background-color: #292929;
+    color:#fff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+footer {
+    background: #292929;
+    padding: 2rem 2rem;
+}
+
+footer h2 {
+    color:#fff;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li a {
+    color: #fff;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}
+
+footer p {
+    color: #fff;
+    font-size:0.5rem;
+    letter-spacing: 1px;
+    font-weight: bold;
+    text-align:center;
+    padding-top:1rem;
+}
+
+footer p a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+#burgerMenu {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+#burgerMenu ul {
+    list-style: none;
+    padding: 0 2rem;
+}
+
+#burgerMenu ul li a {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    transition-duration:.2s
+}
+
+#burgerMenu ul li a:hover {
+    color: #7CE2B2
+}
+
+#burgerMenu ul.hamburgerSocial li {
+    display: inline;
+}
+
+#burgerMenu ul.hamburgerSocial li a {
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#burgerMenu ul.hamburgerSocial li a:hover {
+    color: #7CE2B2
+}
+
+/* About */
+
+.about h1 {
+    background-color: #7CE2B2;
+    padding: 1rem 2rem;
+    color: #292929;
+    text-transform: uppercase;
+}
+
+.about h2 {
+    padding: 1rem 1rem 0 1rem;
+    color: #292929;
+    margin-bottom: 0;
+}
+
+.about p {
+    letter-spacing: 1px;
+    padding:0 1rem;
+}
+
+.about p a {
+    color:#292929;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about p a:hover {
+    text-decoration: underline;
+    color:#7CE2B2;
+}
+
+.about img {
+    width:90%;
+    padding: 1rem;
+}
+
+/* Services */
+
+.services h1 {
+    background-color: #7CE2B2;
+    padding: 1rem 2rem;
+    color: #292929;
+    text-transform: uppercase;
+}
+
+.services h2 {
+    padding: 1rem 1rem 0 1rem;
+    color: #292929;
+    margin-bottom: 0;
+}
+
+.services p {
+    letter-spacing: 1px;
+    padding:0 1rem;
+}
+
+.services p a {
+    color:#292929;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.services p a:hover {
+    text-decoration: underline;
+    color:#7CE2B2;
+}
+
+.services img {
+    width:90%;
+    padding: 1rem;
+}
+
+/* Portfilio */
+
+.portfolio h1 {
+    background-color: #7CE2B2;
+    padding: 1rem 2rem;
+    color: #292929;
+    text-transform: uppercase;
+}
+
+.portfolio h2 {
+    padding: 1rem 1rem 0 1rem;
+    color: #292929;
+    margin-bottom: 0;
+}
+
+.portfolio p {
+    letter-spacing: 1px;
+    padding:0 1rem;
+}
+
+.portfolio p a {
+    color:#292929;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.portfolio p a:hover {
+    text-decoration: underline;
+    color:#7CE2B2;
+}
+
+.portfolio img {
+    width:90%;
+    padding: 1rem;
+}
+
+.portfolio .launch-image p {
+    bottom: 10%;
+    left: 35%;
+}
+
+/* Contact */
+
+.contact h1 {
+    background-color: #7CE2B2;
+    padding: 1rem 2rem;
+    color: #292929;
+    text-transform: uppercase;
+}
+
+.contact h2 {
+    padding: 1rem 1rem 0 1rem;
+    color: #292929;
+    margin-bottom: 0;
+}
+
+.contact p {
+    letter-spacing: 1px;
+    padding:0 1rem;
+}
+
+.contact p a {
+    color:#292929;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact p a:hover {
+    text-decoration: underline;
+    color:#7CE2B2;
+}
+
+.contact img {
+    width:90%;
+    padding: 1rem;
+}
+
+.contact .contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 1rem 3rem 0rem;
+}
