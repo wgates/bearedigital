@@ -84,7 +84,6 @@ header .hamburger-icon {
     cursor: pointer;
     color: currentColor;
     z-index: 2;
-    position: relative;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -291,13 +290,11 @@ header .contact-header::after {
 
 .hp-services img {
     width: 100%;
-    height: intrinsic;
 }
 
 @media (min-width: 600px) {
     .hp-services img {
         width: 50%;
-        height: intrinsic;
         flex: 0 0 50%;
         margin-right: 40px;
     }
@@ -855,3 +852,21 @@ footer p a:hover {
       opacity:1;
     }
   }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+}
+
+  @-ms-keyframes fadeInSlower {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+}
