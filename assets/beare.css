@@ -142,7 +142,7 @@ header .contact::after {
 
 .hp-about {
     padding: 1rem 1rem 3rem 1rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(xps-8pb7Hq539Zw-unsplash.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(xps-8pb7Hq539Zw-unsplash.jpg);
     background-size: cover;
 }
 
