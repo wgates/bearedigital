@@ -855,21 +855,3 @@ footer p a:hover {
       opacity:1;
     }
   }
-  
-  @-ms-keyframes fadeIn {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-  }
-}
-
-  @-ms-keyframes fadeInSlower {
-    0% {
-      opacity:0;
-    }
-    100% {
-      opacity:1;
-  }
-}
