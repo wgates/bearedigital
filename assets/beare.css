@@ -29,6 +29,12 @@ header {
     background-color: #707070;
 }
 
+@media (min-width: 600px) {
+    header {
+        padding: 0 20rem;
+    }
+}
+
 header button {
     background-color: transparent;
     -webkit-appearance: none;
@@ -135,6 +141,13 @@ header .contact::after {
     margin: 0;
 }
 
+@media (min-width: 600px) {
+    .jumbotron p {
+        font-size: 3rem;
+        width: 60%;
+    }
+}
+
 .jumbotron p span {
     color:#7CE2B2;
     font-weight: bold;
@@ -146,12 +159,24 @@ header .contact::after {
     background-size: cover;
 }
 
+@media (min-width: 600px) {
+    .hp-about {
+        padding:4rem;
+    }
+}
+
 .hp-about p {
     font-size:1rem;
     font-weight: 600;
     padding: 0 0 1rem 0;
     letter-spacing: 1px;
     color: #fff;
+}
+
+@media (min-width: 600px) {
+    .hp-about p {
+        padding:0 20rem;
+    }
 }
 
 .cta-button {
@@ -192,6 +217,12 @@ header .contact::after {
     padding: 0 1rem;
 }
 
+@media (min-width: 600px) {
+    .launches {
+        padding: 0 20rem;
+    }
+}
+
 .launches img {
     width:100%;
 }
@@ -214,6 +245,12 @@ header .contact::after {
 
 .launch-image p span {
     font-size: 0.75rem;
+}
+
+@media (min-width: 600px) {
+    .hp-services {
+        padding: 0 20rem;
+    }
 }
 
 .hp-services h1 {
@@ -317,6 +354,12 @@ footer p a:hover {
     padding: 0 2rem;
 }
 
+@media (min-width: 600px) {
+    #burgerMenu ul {
+        padding: 0 20rem;
+    }
+}
+
 #burgerMenu ul li a {
     font-size: 1.6rem;
     font-weight: bold;
@@ -325,8 +368,20 @@ footer p a:hover {
     transition-duration:.2s
 }
 
+@media (min-width: 600px) {
+    #burgerMenu ul li a {
+        font-size: 2.6rem;
+    }
+}
+
 #burgerMenu ul li a:hover {
     color: #7CE2B2
+}
+
+@media (min-width: 600px) {
+    #burgerMenu ul.hamburgerSocial {
+        padding: 0 20rem;
+    }
 }
 
 #burgerMenu ul.hamburgerSocial li {
@@ -343,6 +398,12 @@ footer p a:hover {
 }
 
 /* About */
+
+@media (min-width: 600px) {
+    .about {
+        padding:0 20rem;
+    }
+}
 
 .about h1 {
     background-color: #7CE2B2;
@@ -380,6 +441,12 @@ footer p a:hover {
 
 /* Services */
 
+@media (min-width: 600px) {
+    .services {
+        padding:0 20rem;
+    }
+}
+
 .services h1 {
     background-color: #7CE2B2;
     padding: 1rem 2rem;
@@ -415,6 +482,12 @@ footer p a:hover {
 }
 
 /* Portfilio */
+
+@media (min-width: 600px) {
+    .portfolio {
+        padding:0 20rem;
+    }
+}
 
 .portfolio h1 {
     background-color: #7CE2B2;
@@ -456,6 +529,12 @@ footer p a:hover {
 }
 
 /* Contact */
+
+@media (min-width: 600px) {
+    .contact {
+        padding:0 20rem;
+    }
+}
 
 .contact h1 {
     background-color: #7CE2B2;
