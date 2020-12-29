@@ -290,6 +290,7 @@ header .contact-header::after {
 
 .hp-services img {
     width: 100%;
+    height: 100%;
 }
 
 @media (min-width: 600px) {
