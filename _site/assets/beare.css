@@ -132,6 +132,7 @@ header .contact::after {
     font-size: 2rem;
     color: #fff;
     width: 70%;
+    margin: 0;
 }
 
 .jumbotron p span {
