@@ -270,6 +270,15 @@ header .contact::after {
     letter-spacing: 1px;
 }
 
+.hp-services ul li a {
+    color:#292929;
+    text-decoration: none;
+}
+
+.hp-services ul li a:hover {
+    text-decoration: underline;
+}
+
 .hp-contact {
     background-color: #7CE2B2;
     padding: 1rem 1rem 3rem 1rem;
@@ -576,4 +585,109 @@ footer p a:hover {
     justify-content: center;
     align-items: center;
     padding: 1rem 1rem 3rem 0rem;
+}
+
+.fade-in {
+    animation: fadeIn ease 3s;
+    -webkit-animation: fadeIn ease 3s;
+    -moz-animation: fadeIn ease 3s;
+    -o-animation: fadeIn ease 3s;
+    -ms-animation: fadeIn ease 3s;
+  }
+
+  .fade-in-slower {
+    animation: fadeInSlower ease 5s;
+    -webkit-animation: fadeInSlower ease 5s;
+    -moz-animation: fadeInSlower ease 5s;
+    -o-animation: fadeInSlower ease 5s;
+    -ms-animation: fadeInSlower ease 5s;
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @keyframes fadeInSlower {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-moz-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @-moz-keyframes fadeInSlower {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-webkit-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @-webkit-keyframes fadeInSlower {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-o-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @-o-keyframes fadeInSlower {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+  
+  @-ms-keyframes fadeIn {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
+}
+
+  @-ms-keyframes fadeInSlower {
+    0% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+  }
 }
