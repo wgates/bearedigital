@@ -277,7 +277,7 @@ header .contact-header::after {
 .hp-services {
     display: flex;
     flex-direction: column-reverse;
-    padding: 2rem 0rem;
+    padding: 2rem 0;
 }
 
 @media (min-width: 600px) {
@@ -544,7 +544,7 @@ footer p a:hover {
     .about img {
         display: block;
         margin: 0 auto;
-        width: 70rem;
+        width: 70;
     }
 }
 
@@ -579,7 +579,7 @@ footer p a:hover {
 
 @media (min-width: 600px) {
     .services h2 {
-        padding: 2rem 0rem;
+        padding: 2rem 0;
         font-size: 3rem;
     }
 }
@@ -616,7 +616,7 @@ footer p a:hover {
     .services img {
         display: block;
         margin: 0 auto;
-        width: 70rem;
+        width: 70;
     }
 }
 
@@ -651,7 +651,7 @@ footer p a:hover {
 
 @media (min-width: 600px) {
     .portfolio h2 {
-        padding: 2rem 0rem;
+        padding: 2rem 0;
         font-size: 3rem;
     }
 }
@@ -688,7 +688,7 @@ footer p a:hover {
     .portfolio img {
         display: block;
         margin: 0 auto;
-        width: 70rem;
+        width: 70;
     }
 }
 
@@ -728,7 +728,7 @@ footer p a:hover {
 
 @media (min-width: 600px) {
     .contact h2 {
-        padding: 2rem 0rem;
+        padding: 2rem 0;
         font-size: 3rem;
     }
 }
@@ -766,7 +766,7 @@ footer p a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 1rem 1rem 3rem 0rem;
+    padding: 1rem 1rem 3rem 0;
 }
 
 .fade-in {
