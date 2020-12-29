@@ -31,7 +31,7 @@ header {
 
 @media (min-width: 600px) {
     header {
-        padding: 0 20rem;
+        padding: 0 5rem;
     }
 }
 
@@ -219,7 +219,7 @@ header .contact::after {
 
 @media (min-width: 600px) {
     .launches {
-        padding: 0 20rem;
+        padding: 0 5rem;
     }
 }
 
@@ -356,7 +356,7 @@ footer p a:hover {
 
 @media (min-width: 600px) {
     #burgerMenu ul {
-        padding: 0 20rem;
+        padding: 0 5rem;
     }
 }
 
@@ -380,7 +380,7 @@ footer p a:hover {
 
 @media (min-width: 600px) {
     #burgerMenu ul.hamburgerSocial {
-        padding: 0 20rem;
+        padding: 0 5rem;
     }
 }
 
@@ -401,7 +401,7 @@ footer p a:hover {
 
 @media (min-width: 600px) {
     .about {
-        padding:0 20rem;
+        padding:0 5rem;
     }
 }
 
@@ -443,7 +443,7 @@ footer p a:hover {
 
 @media (min-width: 600px) {
     .services {
-        padding:0 20rem;
+        padding:0 5rem;
     }
 }
 
@@ -485,7 +485,7 @@ footer p a:hover {
 
 @media (min-width: 600px) {
     .portfolio {
-        padding:0 20rem;
+        padding:0 5rem;
     }
 }
 
@@ -532,7 +532,7 @@ footer p a:hover {
 
 @media (min-width: 600px) {
     .contact {
-        padding:0 20rem;
+        padding:0 5rem;
     }
 }
 
