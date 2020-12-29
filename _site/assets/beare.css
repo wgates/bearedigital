@@ -196,6 +196,7 @@ header .contact-header::after {
     padding: 0 0 1rem 0;
     letter-spacing: 1px;
     color: #fff;
+    text-align:center;
 }
 
 @media (min-width: 600px) {
