@@ -20,6 +20,32 @@ body {
      } 
 } 
 
+.fl {
+    display:flex;
+}
+
+.d-rw-m-cl {
+    flex-direction: column;
+}
+
+@media (min-width: 600px) {
+    .d-rw-m-cl {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 600px) {
+    .jc-sa {
+        justify-content: space-around;
+    } 
+}
+
+@media (min-width: 600px) {
+    .ai-c {
+        align-items: center;
+    }
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -119,7 +145,7 @@ header .logo a {
     text-decoration: none;
 }
 
-header .contact::after {
+header .contact-header::after {
     content: '';
     display: block;
     border-bottom: 1px solid #7CE2B2;
@@ -175,7 +201,8 @@ header .contact::after {
 
 @media (min-width: 600px) {
     .hp-about p {
-        padding:0 20rem;
+        padding:0 5rem;
+        font-size: 2rem;
     }
 }
 
@@ -247,9 +274,42 @@ header .contact::after {
     font-size: 0.75rem;
 }
 
+.hp-services {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 2rem 0rem;
+}
+
 @media (min-width: 600px) {
     .hp-services {
-        padding: 0 20rem;
+        padding: 2rem 5rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.hp-services img {
+    width: 100%;
+    height: intrinsic;
+}
+
+@media (min-width: 600px) {
+    .hp-services img {
+        width: 50%;
+        height: intrinsic;
+        flex: 0 0 50%;
+        margin-right: 40px;
+    }
+}
+
+.hp-services-list {
+    width: 100%;
+}
+
+@media (min-width: 600px) {
+    .hp-services-list {
+        width: 100%;
     }
 }
 
@@ -258,6 +318,15 @@ header .contact::after {
     padding:1rem 2rem;
     color:#7CE2B2;
     text-transform: uppercase;
+}
+
+@media (min-width: 600px) {
+    .hp-services h1 {
+        background: #fff;
+        font-size: 3rem;
+        padding: 0 2rem;
+        margin: 0;
+    } 
 }
 
 .hp-services ul {
@@ -282,6 +351,7 @@ header .contact::after {
 .hp-contact {
     background-color: #7CE2B2;
     padding: 1rem 1rem 3rem 1rem;
+    margin-top: 50px;
 }
 
 .hp-contact h2 {
@@ -421,15 +491,37 @@ footer p a:hover {
     text-transform: uppercase;
 }
 
+@media (min-width: 600px) {
+    .about h1 {
+        background-color: #fff;
+        padding: 0 5rem;
+        font-size: 5rem;
+    }
+}
+
 .about h2 {
     padding: 1rem 1rem 0 1rem;
     color: #292929;
     margin-bottom: 0;
 }
 
+@media (min-width: 600px) {
+    .about h2 {
+        padding: 0 5rem;
+        font-size: 3rem;
+    }
+}
+
 .about p {
     letter-spacing: 1px;
     padding:0 1rem;
+}
+
+@media (min-width: 600px) {
+    .about p {
+        font-size: 1.5rem;
+        padding: 0 5rem;
+    }
 }
 
 .about p a {
@@ -448,6 +540,14 @@ footer p a:hover {
     padding: 1rem;
 }
 
+@media (min-width: 600px) {
+    .about img {
+        display: block;
+        margin: 0 auto;
+        width: 70rem;
+    }
+}
+
 /* Services */
 
 @media (min-width: 600px) {
@@ -463,15 +563,37 @@ footer p a:hover {
     text-transform: uppercase;
 }
 
+@media (min-width: 600px) {
+    .services h1 {
+        background-color: #fff;
+        padding: 0 5rem;
+        font-size: 5rem;
+    }
+}
+
 .services h2 {
     padding: 1rem 1rem 0 1rem;
     color: #292929;
     margin-bottom: 0;
 }
 
+@media (min-width: 600px) {
+    .services h2 {
+        padding: 2rem 0rem;
+        font-size: 3rem;
+    }
+}
+
 .services p {
     letter-spacing: 1px;
     padding:0 1rem;
+}
+
+@media (min-width: 600px) {
+    .services p {
+        font-size: 1.5rem;
+        padding: 0 5rem;
+    }
 }
 
 .services p a {
@@ -490,6 +612,14 @@ footer p a:hover {
     padding: 1rem;
 }
 
+@media (min-width: 600px) {
+    .services img {
+        display: block;
+        margin: 0 auto;
+        width: 70rem;
+    }
+}
+
 /* Portfilio */
 
 @media (min-width: 600px) {
@@ -505,15 +635,37 @@ footer p a:hover {
     text-transform: uppercase;
 }
 
+@media (min-width: 600px) {
+    .portfolio h1 {
+        background-color: #fff;
+        padding: 0 5rem;
+        font-size: 5rem;
+    }
+}
+
 .portfolio h2 {
     padding: 1rem 1rem 0 1rem;
     color: #292929;
     margin-bottom: 0;
 }
 
+@media (min-width: 600px) {
+    .portfolio h2 {
+        padding: 2rem 0rem;
+        font-size: 3rem;
+    }
+}
+
 .portfolio p {
     letter-spacing: 1px;
     padding:0 1rem;
+}
+
+@media (min-width: 600px) {
+    .portfolio p {
+        font-size: 1.5rem;
+        padding: 0 5rem;
+    }
 }
 
 .portfolio p a {
@@ -530,6 +682,14 @@ footer p a:hover {
 .portfolio img {
     width:90%;
     padding: 1rem;
+}
+
+@media (min-width: 600px) {
+    .portfolio img {
+        display: block;
+        margin: 0 auto;
+        width: 70rem;
+    }
 }
 
 .portfolio .launch-image p {
@@ -552,15 +712,37 @@ footer p a:hover {
     text-transform: uppercase;
 }
 
+@media (min-width: 600px) {
+    .contact h1 {
+        background-color: #fff;
+        padding: 0 5rem;
+        font-size: 5rem;
+    }
+}
+
 .contact h2 {
     padding: 1rem 1rem 0 1rem;
     color: #292929;
     margin-bottom: 0;
 }
 
+@media (min-width: 600px) {
+    .contact h2 {
+        padding: 2rem 0rem;
+        font-size: 3rem;
+    }
+}
+
 .contact p {
     letter-spacing: 1px;
     padding:0 1rem;
+}
+
+@media (min-width: 600px) {
+    .contact p {
+        font-size: 1.5rem;
+        padding: 0 5rem;
+    }
 }
 
 .contact p a {
